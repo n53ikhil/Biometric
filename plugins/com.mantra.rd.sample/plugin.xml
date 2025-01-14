@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+        id="com.mantra.rd.sample"
+        version="0.7.0">
+
+  <name>RDSample</name>
+
+  <engines>
+    <engine name="cordova" version=">=3.4.0"/>
+  </engines>
+
+  <asset src="www/rdsample.js" target="js/rdsample.js"/>
+
+  <js-module src="www/rdsample.js" name="rdsample">
+    <clobbers target="rdsample" />
+  </js-module>
+
+  <platform name="android">
+
+    <config-file target="res/xml/config.xml" parent="/*">
+      <feature name="RDSample">
+        <param name="android-package" value="com.mantra.plugin.RDSample"/>
+      </feature>
+    </config-file>
+
+    <source-file src="src/android/RDSample.java" target-dir="src/com/mantra/plugin/"/>
+    
+  </platform>
+  
+</plugin>

@@ -1,0 +1,18 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "com.mantra.rd.sample": {
+            "PACKAGE_NAME": "com.mantra.rd.sample"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "org.apache.cordova.whitelist"
+        }
+    },
+    "dependent_plugins": {}
+}

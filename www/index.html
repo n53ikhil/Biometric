@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <!-- <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport"> -->
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="js/bootstrap.min.js">
+    </script>
+    <title>RD Sample Cordova</title>
+    <style>
+        .btnSample:hover {
+            background-color: #00b9f5 !important;
+            color:white !important;
+            cursor: pointer;
+            padding:5px;
+        }
+    </style>
+</head>
+<body style="background: #ddd; margin: 0PX; font-family: sans-serif; " onload="onLoad()">
+    <div align="center" style="font-weight: bold; font-size: 20px; color: white; background-color: #012b72; font-family:sans-serif;padding: 5px;">RDSample</div>
+
+    <div style="margin-top: 10px; padding: 5px;" align="center">
+        <table>
+            <tr>
+                <td style="padding-left: 10px;">
+                    <div align="center">
+                        <input type="button" class="btnSample" style="width: 150px; background: white; color: #00b9f5; border: 1px solid #00b9f5; padding: 5px; font-size: 16px; " id="btnInfo" value="Finger DeviceInfo">
+                        <input type="button" class="btnSample" style="width: 150px; background: white; color: #00b9f5; border: 1px solid #00b9f5; padding: 5px; font-size: 16px; " id="btnCapture" value="Finger Capture">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td style="padding-left: 10px; padding-top: 3px;">
+                    <div align="center">
+                        <input type="button" class="btnSample" style="width: 150px; background: white; color: #00b9f5; border: 1px solid #00b9f5; padding: 5px; font-size: 16px; " id="btnIrisInfo" value="Iris DeviceInfo">
+                        <input type="button" class="btnSample" style="width: 150px; background: white; color: #00b9f5; border: 1px solid #00b9f5; padding: 5px; font-size: 16px; " id="btnIrisCapture" value="Iris Capture">
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div style="margin-top: 10px; padding-left: 5px; width: 100%; font-size: 15px;"> 
+    	Response: <label id="lblstatus" style="overflow-y: scroll; text-transform: none; font-weight: normal;"></label> 
+    </div>
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>
